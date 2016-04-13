@@ -8,7 +8,7 @@ var bodyParser = require('body-parser');
 app.use(bodyParser.json());
 app.use('/', indexRouter);
 app.use('/get', nameRouter);
-
+app.use(express.static('server/public'));
 
 var mongoURI = 'mongodb://localhost:27017/RandomTwitter';
 var MongoDB = mongoose.connect(mongoURI).connection;

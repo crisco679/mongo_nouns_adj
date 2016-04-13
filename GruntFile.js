@@ -7,7 +7,7 @@ module.exports = function(grunt) {
                banner: '/*! <%= pkg.name %> <%= grunt.template.today("yyyy-mm-dd") %> */\n'
            },
            build: {
-               src: 'client/client.js',
+               src: 'client.js',
                dest: 'server/public/assets/scripts/client.min.js'
            }
        },
@@ -31,4 +31,4 @@ module.exports = function(grunt) {
    // Default task(s).
    grunt.registerTask('default', ['copy', 'uglify']);
 
-};
+}

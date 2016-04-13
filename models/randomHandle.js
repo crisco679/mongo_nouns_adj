@@ -5,7 +5,7 @@ var Schema = mongoose.Schema;
 
 var wordSchema = new Schema({
   id: String,
-  words: []
+  words: [],
 });
 
 var RandomHandle = mongoose.model('RandomHandle', wordSchema);
